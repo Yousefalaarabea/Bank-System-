@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE4B81D7-2930-49F7-B0F2-B4EA17026D0F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Bankform1</RootNamespace>
+    <AssemblyName>Bankform1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b" />
+    <Reference Include="Bunifu.UI.WinForms.1.5.3">
+      <HintPath>..\..\..\Second year yousef\Second term\Data base\Bunifu_UI_WinForms_5.0.3\ui.winforms.5.0.3\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>..\..\..\Second year yousef\Second term\Data base\Bunifu_UI_WinForms_5.0.3\ui.winforms.5.0.3\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCircleProgress">
+      <HintPath>..\..\..\Second year yousef\Second term\Data base\Bunifu_UI_WinForms_5.0.3\ui.winforms.5.0.3\Bunifu.UI.WinForms.BunifuCircleProgress.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>..\..\..\Second year yousef\Second term\Data base\Bunifu_UI_WinForms_5.0.3\ui.winforms.5.0.3\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuProgressBar">
+      <HintPath>..\..\..\Second year yousef\Second term\Data base\Bunifu_UI_WinForms_5.0.3\ui.winforms.5.0.3\Bunifu.UI.WinForms.BunifuProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
+      <HintPath>..\..\..\Second year yousef\Second term\Data base\Bunifu_UI_WinForms_5.0.3\ui.winforms.5.0.3\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v22.2.Core, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v22.2.Core, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v22.2.Core, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v22.2.Core, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v22.2.Core, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v22.2.Core, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v22.2.Export, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v22.2.Core, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.2.UI, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v22.2.Core, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v22.2.Extensions, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\Second year yousef\Second term\Data base\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AnalysisServices.AppLocal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.AnalysisServices.AppLocal.Tabular, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddBank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBank.Designer.cs">
+      <DependentUpon>AddBank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddBranch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBranch.Designer.cs">
+      <DependentUpon>AddBranch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLoanDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLoanDetails.Designer.cs">
+      <DependentUpon>AdminLoanDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSignUp.Designer.cs">
+      <DependentUpon>AdminSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BankDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankDataSet1TableAdapters\ADMINTableAdapter.cs" />
+    <Compile Include="BankDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankDataSetTableAdapters.cs" />
+    <Compile Include="BankDataSetTableAdaptersBase.cs" />
+    <Compile Include="BankDataSetTableAdapters\ADMINTableAdapter.cs" />
+    <Compile Include="Custcreateaccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custcreateaccount.Designer.cs">
+      <DependentUpon>Custcreateaccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustInfo.Designer.cs">
+      <DependentUpon>CustInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customerlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customerlogin.Designer.cs">
+      <DependentUpon>Customerlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empcust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empcust.Designer.cs">
+      <DependentUpon>Empcust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMainMenu.Designer.cs">
+      <DependentUpon>AdminMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerMainMenu.Designer.cs">
+      <DependentUpon>CustomerMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustLoans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustLoans.Designer.cs">
+      <DependentUpon>CustLoans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpLoans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpLoans.Designer.cs">
+      <DependentUpon>EmpLoans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employeelogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employeelogin.Designer.cs">
+      <DependentUpon>Employeelogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMainmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeMainmenu.Designer.cs">
+      <DependentUpon>EmployeeMainmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeSignUp.Designer.cs">
+      <DependentUpon>EmployeeSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT.Designer.cs">
+      <DependentUpon>REPORT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Role.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Role.Designer.cs">
+      <DependentUpon>Role.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adminlogin.Designer.cs">
+      <DependentUpon>Adminlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XtraReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraReport1.Designer.cs">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddBank.resx">
+      <DependentUpon>AddBank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddBranch.resx">
+      <DependentUpon>AddBranch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLoanDetails.resx">
+      <DependentUpon>AdminLoanDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSignUp.resx">
+      <DependentUpon>AdminSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custcreateaccount.resx">
+      <DependentUpon>Custcreateaccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustInfo.resx">
+      <DependentUpon>CustInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customerlogin.resx">
+      <DependentUpon>Customerlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empcust.resx">
+      <DependentUpon>Empcust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMainMenu.resx">
+      <DependentUpon>AdminMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerMainMenu.resx">
+      <DependentUpon>CustomerMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustLoans.resx">
+      <DependentUpon>CustLoans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpLoans.resx">
+      <DependentUpon>EmpLoans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employeelogin.resx">
+      <DependentUpon>Employeelogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeMainmenu.resx">
+      <DependentUpon>EmployeeMainmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeSignUp.resx">
+      <DependentUpon>EmployeeSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="REPORT.resx">
+      <DependentUpon>REPORT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report.rdlc" />
+    <EmbeddedResource Include="Role.resx">
+      <DependentUpon>Role.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adminlogin.resx">
+      <DependentUpon>Adminlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="XtraReport1.resx">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BankDataSet.xsc">
+      <DependentUpon>BankDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BankDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankDataSet.xss">
+      <DependentUpon>BankDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BankDataSet2.xsc">
+      <DependentUpon>BankDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BankDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankDataSet2.xss">
+      <DependentUpon>BankDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
